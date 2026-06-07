@@ -1,5 +1,3 @@
-<!-- rebuild -->
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -32,6 +30,12 @@ body{
     margin-bottom:40px;
 }
 
+.hero-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
 .hero h1{
     margin:0;
     color:#0F6CBD;
@@ -49,6 +53,17 @@ body{
 .hero p{
     font-size:1.1em;
     max-width:800px;
+}
+
+.hero-badges{
+    display:flex;
+    gap:12px;
+}
+
+.hero-badges img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
 }
 
 .button{
@@ -74,9 +89,10 @@ h2{
 
 .project-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(3,1fr);
     gap:25px;
     margin-top:30px;
+    align-items:start;
 }
 
 .project-card{
@@ -95,7 +111,7 @@ h2{
 
 .project-card img{
     width:100%;
-    height:220px;
+    height:180px;
     object-fit:cover;
 }
 
@@ -144,32 +160,22 @@ h2{
     margin-top:20px;
 }
 
-.hero-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.hero-badges{
-    display:flex;
-    gap:12px;
-}
-
-.hero-badges img{
-    width:100px;
-    height:100px;
-    object-fit:contain;
-}
-
 .footer{
     margin-top:60px;
     text-align:center;
     color:#777;
 }
 
-.coming-soon{
-    color:#888;
-    font-style:italic;
+@media(max-width:1000px){
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
 }
 
 </style>
@@ -184,16 +190,17 @@ h2{
 
 <div class="hero-header">
 
-    <h1>Peter Kowalski Harding</h1>
-
-    <div class="hero-badges">
-        <img src="assets/images/DP-600.png" alt="DP-600">
-        <img src="assets/images/PL-300.png" alt="PL-300">
-    </div>
-
+<div>
+<h1>Peter Kowalski Harding</h1>
+<h2>Analytics Engineer | Senior Data Analyst | Power BI Developer</h2>
 </div>
 
-<h2>Analytics Engineer | Senior Data Analyst | Power BI Developer</h2>
+<div class="hero-badges">
+<img src="assets/images/DP-600.png" alt="DP-600">
+<img src="assets/images/PL-300.png" alt="PL-300">
+</div>
+
+</div>
 
 <p>
 Designing and delivering modern analytics solutions using Microsoft Fabric, Power BI and AI-powered data experiences.
@@ -237,12 +244,6 @@ End-to-end Microsoft Fabric analytics solution combining demographic, economic a
 
 </a>
 
-<div class="project-card">
-
-<div class="project-content">
-
-<h3>RTI Telemetry Platform</h3>
-
 <a class="project-card" href="projects/rti.html">
 
 <img src="/assets/images/rti/Report Page.png">
@@ -267,12 +268,6 @@ Real-time operational intelligence solution built using Microsoft Fabric RTI, Ev
 
 </a>
 
-<div class="project-card">
-
-<div class="project-content">
-
-<h3>AI Data Agent</h3>
-
 <a class="project-card" href="projects/ai-agent.html">
 
 <img src="/assets/images/ai-agent/Lineage View.png">
@@ -282,7 +277,7 @@ Real-time operational intelligence solution built using Microsoft Fabric RTI, Ev
 <h3>AI Data Agent for Conversational Analytics</h3>
 
 <p>
-A semantic-model-first analytics solution built in Microsoft Fabric that combines governed business metrics, metadata-rich semantic modelling and Fabric Data Agents to enable natural language analytics.
+Semantic-model-first analytics solution built in Microsoft Fabric using governed business metrics, metadata-rich semantic models and conversational AI experiences.
 </p>
 
 <div class="tags">
