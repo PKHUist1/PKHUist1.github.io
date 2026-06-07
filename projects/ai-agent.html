@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Data Agent | Microsoft Fabric Portfolio</title>
+
+<style>
+
+body{
+    font-family: Segoe UI, Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+    color:#333;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.hero{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.hero-content{
+    padding:40px;
+}
+
+h1{
+    margin-top:0;
+    color:#0F6CBD;
+}
+
+h2{
+    margin-top:50px;
+    padding-bottom:10px;
+    border-bottom:2px solid #e5e5e5;
+}
+
+.tags{
+    margin-top:15px;
+}
+
+.tag{
+    display:inline-block;
+    background:#e8f2ff;
+    color:#0F6CBD;
+    padding:8px 14px;
+    margin:4px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    margin-right:10px;
+    background:#0F6CBD;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#0b58a1;
+}
+
+.back{
+    display:inline-block;
+    margin-bottom:20px;
+    text-decoration:none;
+    color:#0F6CBD;
+    font-weight:bold;
+}
+
+img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    margin-top:20px;
+}
+
+video{
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="../index.html">← Back to Portfolio</a>
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>AI Data Agent for Conversational Analytics</h1>
+
+<p>
+A Microsoft Fabric solution demonstrating how a governed semantic model can be combined with Fabric Data Agents to deliver self-service analytics through natural language interaction.
+</p>
+
+<p>
+The project focuses on semantic engineering, metadata governance, business-friendly modelling and conversational analytics. Rather than relying on analysts to answer ad-hoc questions, business users can interact directly with enterprise data using natural language while still benefiting from governed metrics and centrally managed business logic.
+</p>
+
+<div class="tags">
+
+<span class="tag">Microsoft Fabric</span> <span class="tag">Semantic Models</span> <span class="tag">Fabric Data Agent</span> <span class="tag">Lakehouse</span> <span class="tag">DAX</span> <span class="tag">AI Analytics</span> <span class="tag">Metadata Governance</span> <span class="tag">Conversational BI</span>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Project Overview</h2>
+
+<p>
+This project demonstrates a semantic-model-first analytics architecture built using Microsoft Fabric. Sales data from the Contoso retail dataset is ingested into a Fabric Lakehouse, transformed using Spark and surfaced through a governed semantic model.
+</p>
+
+<p>
+The semantic model contains curated business terminology, calculation groups, metadata descriptions, perspectives, security roles and reusable DAX measures. Fabric Data Agent is then layered on top of the semantic model to enable natural language interaction with enterprise data.
+</p>
+
+<h2>Video Walkthrough</h2>
+
+<video controls>
+    <source src="/assets/videos/ai-agent/Data Agent Linkedin.mp4" type="video/mp4">
+</video>
+
+<p>
+Walkthrough demonstrating semantic modelling, metadata design and conversational analytics using Fabric Data Agent.
+</p>
+
+<h2>Solution Architecture</h2>
+
+<img src="/assets/images/ai-agent/Lineage View.png">
+
+<p>
+End-to-end Fabric architecture showing the relationship between the Lakehouse, notebooks, semantic model and Fabric Data Agent.
+</p>
+
+<h2>Semantic Engineering</h2>
+
+<p>
+A major focus of this project was creating a semantic layer that could support both traditional reporting and AI-driven analytics experiences.
+</p>
+
+<img src="/assets/images/ai-agent/Model Composition View.png">
+
+<p>
+Star schema semantic model built using fact and dimension tables including Sales, Customer, Product, Promotion, Store and Calendar.
+</p>
+
+<img src="/assets/images/ai-agent/Semantic Model Meta Data View.png">
+
+<p>
+Business-friendly metadata and descriptions added to improve discoverability and provide contextual understanding for both users and AI experiences.
+</p>
+
+<img src="/assets/images/ai-agent/Meta Data and Roles View.png">
+
+<p>
+Security roles, perspectives, relationships and calculation groups used to create a governed enterprise semantic layer.
+</p>
+
+<h2>Natural Language Analytics</h2>
+
+<p>
+Fabric Data Agent enables business users to ask questions using everyday language while leveraging the governed semantic model behind the scenes.
+</p>
+
+<img src="/assets/images/ai-agent/CEO Response.png">
+
+<p>
+Executive-level summary generated from a natural language request, highlighting key business insights and strategic considerations.
+</p>
+
+<img src="/assets/images/ai-agent/Key Performance Trends.png">
+
+<p>
+Data Agent summarising historical performance trends and identifying significant business outcomes directly from the semantic model.
+</p>
+
+<img src="/assets/images/ai-agent/Sales Executive Screenshot.png">
+
+<p>
+Example of conversational analytics tailored for sales leadership, delivering business-ready recommendations and actionable insights.
+</p>
+
+<h2>Key Capabilities Demonstrated</h2>
+
+<ul>
+<li>Microsoft Fabric Lakehouse Architecture</li>
+<li>Spark-Based Data Transformation</li>
+<li>Fabric Pipelines</li>
+<li>Enterprise Semantic Modelling</li>
+<li>Star Schema Design</li>
+<li>Governed DAX Measures</li>
+<li>Calculation Groups</li>
+<li>Metadata & Semantic Governance</li>
+<li>Perspectives & Role-Based Security</li>
+<li>Fabric Data Agent Configuration</li>
+<li>Natural Language Querying</li>
+<li>Conversational Analytics</li>
+<li>AI-Ready Semantic Architecture</li>
+</ul>
+
+<h2>Outcome</h2>
+
+<p>
+The completed solution demonstrates how semantic modelling, governance and AI can be combined to create a scalable self-service analytics experience. By placing a curated semantic layer at the centre of the architecture, business users gain access to trusted metrics through both traditional reporting and conversational interfaces.
+</p>
+
+<p>
+The project showcases Microsoft Fabric capabilities across data engineering, semantic engineering and AI-powered analytics while demonstrating how organisations can prepare their analytical estate for the next generation of natural language data experiences.
+</p>
+
+</div>
+
+</body>
+</html>
