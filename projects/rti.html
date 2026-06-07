@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alberta Grid Operations Monitoring</title>
+
+<style>
+
+body{
+    font-family: Segoe UI, Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+    color:#333;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.hero{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+}
+
+.hero-content{
+    padding:30px;
+}
+
+h1{
+    margin-top:0;
+    color:#0F6CBD;
+}
+
+h2{
+    margin-top:50px;
+    padding-bottom:10px;
+    border-bottom:2px solid #e5e5e5;
+}
+
+.tags{
+    margin-top:15px;
+}
+
+.tag{
+    display:inline-block;
+    background:#e8f2ff;
+    color:#0F6CBD;
+    padding:8px 14px;
+    margin:4px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.image-full{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    margin-top:20px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.card p{
+    padding:15px;
+    margin:0;
+    font-size:14px;
+}
+
+.back{
+    display:inline-block;
+    margin-bottom:20px;
+    text-decoration:none;
+    color:#0F6CBD;
+    font-weight:bold;
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="../index.html">← Back to Portfolio</a>
+
+<div class="hero">
+
+<img src="/assets/images/rti/Report Page.png">
+
+<div class="hero-content">
+
+<h1>Alberta Grid Operations Monitoring</h1>
+
+<p>
+A Microsoft Fabric Real-Time Intelligence solution designed to monitor live Alberta electrical grid telemetry and weather data using streaming ingestion, Eventstream, Eventhouse, KQL analytics and operational dashboards.
+</p>
+
+<p>
+The platform provides near real-time visibility into electricity demand, reserve capacity, grid health, telemetry freshness and environmental conditions that influence energy consumption.
+</p>
+
+<div class="tags">
+
+<span class="tag">Microsoft Fabric RTI</span>
+<span class="tag">Eventstream</span>
+<span class="tag">Eventhouse</span>
+<span class="tag">KQL</span>
+<span class="tag">Power BI</span>
+<span class="tag">Streaming Analytics</span>
+<span class="tag">Telemetry Engineering</span>
+<span class="tag">Operational Intelligence</span>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Business Scenario</h2>
+
+<p>
+Traditional reporting focuses on historical analysis, whereas operational teams require visibility into events as they happen. This solution demonstrates how Microsoft Fabric Real-Time Intelligence can be used to monitor electrical grid operations in near real-time.
+</p>
+
+<p>
+The platform combines live Alberta grid telemetry from AESO with weather telemetry to provide situational awareness, operational health monitoring and environmental correlation analytics.
+</p>
+
+<ul>
+<li>Current grid demand monitoring</li>
+<li>Generation capacity tracking</li>
+<li>Reserve margin monitoring</li>
+<li>Grid stress detection</li>
+<li>Load ramp detection</li>
+<li>Telemetry freshness monitoring</li>
+<li>Weather impact analysis</li>
+<li>Operational state classification</li>
+</ul>
+
+<h2>Solution Architecture</h2>
+
+<img class="image-full"
+src="/assets/images/rti/Eventstream.png">
+
+<p>
+Streaming architecture showing telemetry events flowing from the ingestion layer through Eventstream into Eventhouse for operational analytics and reporting.
+</p>
+
+<p>
+
+AESO Grid Telemetry API + Weather Telemetry<br>
+↓<br>
+Fabric Notebook Producer<br>
+↓<br>
+Eventstream<br>
+↓<br>
+Eventhouse<br>
+↓<br>
+KQL Operational Analytics<br>
+↓<br>
+Power BI DirectQuery Dashboard
+
+</p>
+
+<h2>Telemetry Ingestion</h2>
+
+<p>
+A custom Fabric notebook continuously collects telemetry from external APIs and publishes events into the real-time streaming architecture.
+</p>
+
+<div class="gallery">
+
+<div class="card">
+<img src="/assets/images/rti/Spark Notebook.png">
+<p>Python telemetry producer responsible for collecting and publishing operational telemetry.</p>
+</div>
+
+<div class="card">
+<img src="/assets/images/rti/Enviroment Screenshot.png">
+<p>Custom Fabric environment configured with additional libraries used for external event publishing and telemetry integration.</p>
+</div>
+
+</div>
+
+<h2>Eventhouse Storage</h2>
+
+<img class="image-full"
+src="/assets/images/rti/Eventhouse.png">
+
+<p>
+Eventhouse provides scalable operational storage for streaming telemetry, enabling time-series analytics, historical event retention and real-time querying through KQL.
+</p>
+
+<h2>KQL Operational Analytics</h2>
+
+<p>
+Operational intelligence is implemented using Kusto Query Language (KQL), providing real-time calculations, aggregations and state monitoring.
+</p>
+
+<div class="gallery">
+
+<div class="card">
+<img src="/assets/images/rti/KQL 1.png">
+<p>Current-state telemetry calculations used to monitor reserve capacity and grid utilisation.</p>
+</div>
+
+<div class="card">
+<img src="/assets/images/rti/KQL 2.png">
+<p>Time-series aggregation and rolling operational metrics used for dashboard reporting.</p>
+</div>
+
+<div class="card">
+<img src="/assets/images/rti/Weather Telemetary KQL.png">
+<p>Weather telemetry enrichment and transformation used to correlate environmental conditions with grid demand.</p>
+</div>
+
+</div>
+
+<h2>Operational Dashboard</h2>
+
+<img class="image-full"
+src="/assets/images/rti/Report Page.png">
+
+<p>
+The operational dashboard provides a real-time monitoring experience inspired by observability platforms. It combines live telemetry, health indicators, utilisation metrics, weather telemetry and operational alerts into a single monitoring interface.
+</p>
+
+<ul>
+<li>Grid utilisation versus reserve monitoring</li>
+<li>Operational health indicators</li>
+<li>Alert status monitoring</li>
+<li>Rolling energy consumption analysis</li>
+<li>Weather and load correlation</li>
+<li>Telemetry freshness monitoring</li>
+<li>Operational snapshot reporting</li>
+</ul>
+
+<h2>Key Capabilities Demonstrated</h2>
+
+<ul>
+<li>Microsoft Fabric Real-Time Intelligence</li>
+<li>Eventstream Architecture</li>
+<li>Eventhouse Operational Storage</li>
+<li>Kusto Query Language (KQL)</li>
+<li>Streaming Telemetry Engineering</li>
+<li>Operational Intelligence</li>
+<li>Observability Design Patterns</li>
+<li>DirectQuery Dashboarding</li>
+<li>Weather and Telemetry Correlation</li>
+<li>Real-Time Monitoring Solutions</li>
+</ul>
+
+<h2>Outcome</h2>
+
+<p>
+The completed solution demonstrates how Microsoft Fabric Real-Time Intelligence can be used to build operational monitoring platforms using streaming telemetry, Eventhouse analytics and KQL. The project showcases event-driven architecture, operational intelligence design patterns and observability-focused reporting for real-time decision making.
+</p>
+
+</div>
+
+</body>
+</html>
