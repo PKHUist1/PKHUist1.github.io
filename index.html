@@ -1,77 +1,297 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>Peter Kowalski - Microsoft Fabric Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            margin: 40px;
-        }
+<title>Peter Kowalski Harding | Analytics Portfolio</title>
 
-        h1 {
-            text-align: center;
-        }
+<style>
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
+body{
+    font-family: Segoe UI, Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+    color:#333;
+}
 
-        .tile {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            text-decoration: none;
-            color: black;
-            box-shadow: 0 2px 10px rgba(0,0,0,.1);
-            transition: transform .2s;
-        }
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
 
-        .tile:hover {
-            transform: translateY(-5px);
-        }
+.hero{
+    background:white;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    margin-bottom:40px;
+}
 
-        .tech {
-            color: #666;
-            margin-top: 10px;
-        }
-    </style>
+.hero h1{
+    margin:0;
+    color:#0F6CBD;
+    font-size:3em;
+}
+
+.hero h2{
+    margin-top:10px;
+    color:#666;
+    font-weight:normal;
+    border:none;
+    padding:0;
+}
+
+.hero p{
+    font-size:1.1em;
+    max-width:800px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    background:#0F6CBD;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#0b58a1;
+}
+
+h2{
+    margin-top:50px;
+    padding-bottom:10px;
+    border-bottom:2px solid #e5e5e5;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.project-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    transition:transform .2s ease;
+    text-decoration:none;
+    color:inherit;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    margin-top:0;
+    color:#0F6CBD;
+}
+
+.tags{
+    margin-top:10px;
+}
+
+.tag{
+    display:inline-block;
+    background:#e8f2ff;
+    color:#0F6CBD;
+    padding:6px 12px;
+    margin:3px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.skill{
+    background:white;
+    padding:10px 15px;
+    border-radius:20px;
+    box-shadow:0 1px 5px rgba(0,0,0,.08);
+}
+
+.certifications{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    margin-top:20px;
+}
+
+.footer{
+    margin-top:60px;
+    text-align:center;
+    color:#777;
+}
+
+.coming-soon{
+    color:#888;
+    font-style:italic;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Microsoft Fabric Portfolio</h1>
+<div class="container">
 
-<p style="text-align:center">
-Senior Data Engineer | Fabric Architect | Power BI
+<div class="hero">
+
+<h1>Peter Kowalski Harding</h1>
+
+<h2>Analytics Engineer | Senior Data Analyst | Power BI Developer</h2>
+
+<p>
+Designing and delivering modern analytics solutions using Microsoft Fabric, Power BI and AI-powered data experiences.
 </p>
 
-<div class="grid">
+<p>
+Specialising in end-to-end analytics platforms, real-time intelligence and semantic modelling.
+</p>
 
-<a class="tile" href="#">
-    <h2>Customer Analytics Platform</h2>
-    <div class="tech">
-        Lakehouse • Data Factory • Power BI
-    </div>
+<a class="button"
+href="https://www.linkedin.com/in/peter-kowalski-harding-7b2867178/"
+target="_blank">
+View LinkedIn Profile </a>
+
+</div>
+
+<h2>Featured Projects</h2>
+
+<div class="project-grid">
+
+<a class="project-card" href="projects/analytics.html">
+
+<img src="/assets/images/analytics/Bi Report Project Summary.png">
+
+<div class="project-content">
+
+<h3>Canadian Demographic Analytics Platform</h3>
+
+<p>
+End-to-end Microsoft Fabric analytics solution combining demographic, economic and geographic datasets using a Medallion Architecture, Semantic Models and Power BI.
+</p>
+
+<div class="tags">
+<span class="tag">Microsoft Fabric</span>
+<span class="tag">Lakehouse</span>
+<span class="tag">PySpark</span>
+<span class="tag">Power BI</span>
+</div>
+
+</div>
+
 </a>
 
-<a class="tile" href="#">
-    <h2>Executive KPI Dashboard</h2>
-    <div class="tech">
-        Warehouse • Semantic Model • Power BI
-    </div>
-</a>
+<div class="project-card">
 
-<a class="tile" href="#">
-    <h2>Sales Forecasting Solution</h2>
-    <div class="tech">
-        Notebooks • Lakehouse • ML
-    </div>
-</a>
+<div class="project-content">
+
+<h3>RTI Telemetry Platform</h3>
+
+<p>
+Real-Time Intelligence solution built using Microsoft Fabric to ingest, process and visualise streaming telemetry data.
+</p>
+
+<div class="tags">
+<span class="tag">Eventstream</span>
+<span class="tag">KQL</span>
+<span class="tag">Real-Time Intelligence</span>
+</div>
+
+<p class="coming-soon">Case study coming soon.</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<div class="project-content">
+
+<h3>AI Data Agent</h3>
+
+<p>
+AI-powered analytics experience leveraging Semantic Models and natural language interaction to explore business data.
+</p>
+
+<div class="tags">
+<span class="tag">AI</span>
+<span class="tag">Semantic Models</span>
+<span class="tag">Microsoft Fabric</span>
+</div>
+
+<p class="coming-soon">Case study coming soon.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Core Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Microsoft Fabric</div>
+<div class="skill">Power BI</div>
+<div class="skill">Analytics Engineering</div>
+<div class="skill">Lakehouse Architecture</div>
+<div class="skill">PySpark</div>
+<div class="skill">Semantic Models</div>
+<div class="skill">Data Pipelines</div>
+<div class="skill">Real-Time Intelligence</div>
+<div class="skill">KQL</div>
+<div class="skill">Dimensional Modelling</div>
+<div class="skill">Business Intelligence</div>
+<div class="skill">AI-Powered Analytics</div>
+
+</div>
+
+<h2>Certifications</h2>
+
+<div class="certifications">
+
+<ul>
+<li>Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)</li>
+<li>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</li>
+</ul>
+
+</div>
+
+<div class="footer">
+
+<p>
+Built using GitHub Pages and Microsoft Fabric.
+</p>
+
+</div>
 
 </div>
 
