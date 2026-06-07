@@ -168,73 +168,29 @@ Launch Interactive Report
 
 </div>
 
+<h2>Interactive Demo</h2>
+
+<p>
+Explore the live Power BI report built as part of this project.
+</p>
+
+<p>
+<a class="button"
+href="https://app.powerbi.com/view?r=eyJrIjoiNDFiNTg4N2UtODQ3My00YTM0LTgzYWEtMjhhYWY1YjMxZjNiIiwidCI6IjA2NWEzNWZjLWFmMzMtNDAzZS04MTYxLTI5ZGI1ZjZkOGMyMiJ9"
+target="_blank">
+View Interactive Power BI Report
+</a>
+</p>
+
 <h2>Project Overview</h2>
 
 <p>
-This project demonstrates a complete analytics solution built in Microsoft Fabric using
-publicly available Canadian demographic and economic datasets. The platform combines
-data ingestion, transformation, enrichment, semantic modelling and reporting within a
-single Fabric environment.
+This project demonstrates a complete analytics solution built in Microsoft Fabric using publicly available Canadian demographic and economic datasets.
 </p>
 
 <p>
-The solution follows a Medallion Architecture and incorporates automated pipelines,
-PySpark transformations and dimensional modelling to deliver an interactive analytical
-experience through Power BI.
+The platform combines ingestion, transformation, enrichment, dimensional modelling and reporting within a single Fabric environment while following a Bronze, Silver and Gold Medallion Architecture.
 </p>
-
-<h2>Architecture</h2>
-
-<div class="gallery">
-
-<div class="card">
-<img src="/assets/images/analytics/Bi Report Project Summary.png">
-<p>End-to-end solution architecture showing ingestion, transformation, enrichment and reporting layers.</p>
-</div>
-
-<div class="card">
-<img src="/assets/images/analytics/Pipeline View.png">
-<p>Fabric Pipeline orchestrating Bronze, Silver and Gold notebook execution.</p>
-</div>
-
-</div>
-
-<h2>Data Engineering</h2>
-
-<p>
-The platform uses a Bronze, Silver and Gold Lakehouse architecture with PySpark notebooks
-handling transformation, standardisation and dimensional modelling.
-</p>
-
-<div class="gallery">
-
-<div class="card">
-<img src="/assets/images/analytics/Bronze Table Structure.png">
-<p>Lakehouse structure showing Bronze and Silver layers used throughout the solution.</p>
-</div>
-
-<div class="card">
-<img src="/assets/images/analytics/Bronze Layer Transformation Steps.png">
-<p>PySpark transformation logic used during ingestion and cleansing.</p>
-</div>
-
-<div class="card">
-<img src="/assets/images/analytics/Silver Layer Transformation Screenshots 2.png">
-<p>Silver layer transformation example showing business-rule application and data shaping.</p>
-</div>
-
-</div>
-
-<h2>Semantic Modelling</h2>
-
-<div class="gallery">
-
-<div class="card">
-<img src="/assets/images/analytics/Bi Report Semantic Model.png">
-<p>Semantic model built using fact and dimension tables to support analytical reporting.</p>
-</div>
-
-</div>
 
 <h2>Power BI Reporting</h2>
 
@@ -252,7 +208,57 @@ handling transformation, standardisation and dimensional modelling.
 
 </div>
 
-<h2>Key Capabilities Demonstrated</h2>
+<h2>Solution Architecture</h2>
+
+<img style="width:100%;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-top:20px;"
+src="/assets/images/analytics/Bi Report Project Summary.png">
+
+<p>
+High-level architecture showing ingestion, transformation, enrichment and reporting layers within Microsoft Fabric.
+</p>
+
+<img style="width:100%;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-top:20px;"
+src="/assets/images/analytics/Pipeline View.png">
+
+<p>
+Fabric Pipeline orchestrating Bronze, Silver and Gold notebook execution.
+</p>
+
+<h2>Data Engineering</h2>
+
+<p>
+The platform uses a Medallion Architecture implemented within a Fabric Lakehouse. PySpark notebooks perform cleansing, standardisation, enrichment and dimensional modelling.
+</p>
+
+<img style="width:100%;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-top:20px;"
+src="/assets/images/analytics/Bronze Table Structure.png">
+
+<p>
+Lakehouse structure showing Bronze and Silver layers used throughout the solution.
+</p>
+
+<img style="width:100%;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-top:20px;"
+src="/assets/images/analytics/Bronze Layer Transformation Steps.png">
+
+<p>
+PySpark transformation logic used during ingestion and cleansing.
+</p>
+
+<img style="width:100%;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-top:20px;"
+src="/assets/images/analytics/Silver Layer Transformation Screenshots 2.png">
+
+<p>
+Example showing business-rule application and transformation between Bronze and Silver layers.
+</p>
+
+<h2>Semantic Modelling</h2>
+
+<img style="width:100%;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-top:20px;"
+src="/assets/images/analytics/Bi Report Semantic Model.png">
+
+<p>
+Semantic model built using fact and dimension tables to support analytical reporting and Power BI consumption.
+</p>
 
 <ul>
 <li>Microsoft Fabric Lakehouse Architecture</li>
