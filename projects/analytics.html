@@ -9,7 +9,7 @@
 <style>
 
 body{
-    font-family:Segoe UI,Arial,sans-serif;
+    font-family: Segoe UI, Arial, sans-serif;
     margin:0;
     background:#f4f6f9;
     color:#333;
@@ -126,7 +126,7 @@ ul li{
 
 <div class="hero">
 
-<img src="../assets/images/analytics/Project Summary Image.png">
+<img src="../assets/images/analytics/Bi Report Project Summary.png">
 
 <div class="hero-content">
 
@@ -171,15 +171,16 @@ Launch Interactive Report
 <h2>Project Overview</h2>
 
 <p>
-This project was created to demonstrate a complete Microsoft Fabric analytics workflow
-from ingestion through reporting. Multiple public Canadian datasets were consolidated,
-transformed and enriched to create a single analytical model capable of supporting
-interactive reporting and exploration.
+This project demonstrates a complete analytics solution built in Microsoft Fabric using
+publicly available Canadian demographic and economic datasets. The platform combines
+data ingestion, transformation, enrichment, semantic modelling and reporting within a
+single Fabric environment.
 </p>
 
 <p>
-The solution combines demographic, economic and geographic information and enriches
-it with additional province metadata collected through web scraping.
+The solution follows a Medallion Architecture and incorporates automated pipelines,
+PySpark transformations and dimensional modelling to deliver an interactive analytical
+experience through Power BI.
 </p>
 
 <h2>Architecture</h2>
@@ -187,13 +188,13 @@ it with additional province metadata collected through web scraping.
 <div class="gallery">
 
 <div class="card">
-<img src="../assets/images/analytics/Project Summary Image.png">
-<p>End-to-end architecture showing Bronze, Silver and Gold layers, enrichment and reporting.</p>
+<img src="../assets/images/analytics/Bi Report Project Summary.png">
+<p>End-to-end solution architecture showing ingestion, transformation, enrichment and reporting layers.</p>
 </div>
 
 <div class="card">
 <img src="../assets/images/analytics/Pipeline View.png">
-<p>Fabric Pipeline orchestrating ingestion, transformation and modelling activities.</p>
+<p>Fabric Pipeline orchestrating Bronze, Silver and Gold notebook execution.</p>
 </div>
 
 </div>
@@ -201,25 +202,25 @@ it with additional province metadata collected through web scraping.
 <h2>Data Engineering</h2>
 
 <p>
-The platform follows a Medallion Architecture pattern with Bronze, Silver and Gold
-layers implemented within a Fabric Lakehouse.
+The platform uses a Bronze, Silver and Gold Lakehouse architecture with PySpark notebooks
+handling transformation, standardisation and dimensional modelling.
 </p>
 
 <div class="gallery">
 
 <div class="card">
 <img src="../assets/images/analytics/Bronze Table Structure.png">
-<p>Bronze and Silver Lakehouse structure used to organise raw and transformed datasets.</p>
+<p>Lakehouse structure showing Bronze and Silver layers used throughout the solution.</p>
 </div>
 
 <div class="card">
 <img src="../assets/images/analytics/Bronze Layer Transformation Steps.png">
-<p>PySpark notebook transformations used to standardise and cleanse incoming data.</p>
+<p>PySpark transformation logic used during ingestion and cleansing.</p>
 </div>
 
 <div class="card">
 <img src="../assets/images/analytics/Silver Layer Transformation Screenshots 2.png">
-<p>Example of Silver layer transformation logic and data shaping.</p>
+<p>Silver layer transformation example showing business-rule application and data shaping.</p>
 </div>
 
 </div>
@@ -230,7 +231,7 @@ layers implemented within a Fabric Lakehouse.
 
 <div class="card">
 <img src="../assets/images/analytics/Bi Report Semantic Model.png">
-<p>Star-schema semantic model used to support reporting and analytical consumption.</p>
+<p>Semantic model built using fact and dimension tables to support analytical reporting.</p>
 </div>
 
 </div>
@@ -241,12 +242,12 @@ layers implemented within a Fabric Lakehouse.
 
 <div class="card">
 <img src="../assets/images/analytics/Bi Report Default View.png">
-<p>Main reporting dashboard providing demographic and economic insights across Canadian provinces.</p>
+<p>Main dashboard providing province-level demographic and economic analysis.</p>
 </div>
 
 <div class="card">
 <img src="../assets/images/analytics/Bi report in Use.png">
-<p>Interactive report experience with province filtering, drill-through and geographic analysis.</p>
+<p>Interactive report demonstrating filtering, drill-through and geographic insights.</p>
 </div>
 
 </div>
@@ -254,34 +255,25 @@ layers implemented within a Fabric Lakehouse.
 <h2>Key Capabilities Demonstrated</h2>
 
 <ul>
-
 <li>Microsoft Fabric Lakehouse Architecture</li>
-
 <li>Bronze, Silver and Gold Medallion Design Pattern</li>
-
 <li>PySpark Data Transformation</li>
-
-<li>Automated Data Orchestration using Fabric Pipelines</li>
-
-<li>Data Enrichment using External Sources</li>
-
+<li>Fabric Data Pipelines</li>
+<li>Data Enrichment and Web Scraping</li>
 <li>Dimensional Modelling</li>
-
 <li>Semantic Model Development</li>
-
-<li>Interactive Power BI Reporting</li>
-
-<li>End-to-End Analytics Engineering</li>
-
+<li>Power BI Dashboard Design</li>
+<li>Analytics Engineering</li>
+<li>End-to-End Data Platform Delivery</li>
 </ul>
 
 <h2>Outcome</h2>
 
 <p>
-The completed solution delivers a unified analytics platform that combines multiple
-Canadian demographic and economic datasets into a single reporting experience.
-The project demonstrates the full lifecycle of a modern Microsoft Fabric implementation,
-from ingestion and transformation through to semantic modelling and business intelligence.
+The completed solution delivers a unified analytical platform that combines demographic,
+economic and geographic information into a single reporting experience. The project
+demonstrates practical Microsoft Fabric skills across data engineering, modelling and
+business intelligence disciplines while showcasing an end-to-end analytics workflow.
 </p>
 
 </div>
