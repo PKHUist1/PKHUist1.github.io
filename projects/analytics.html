@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>End-to-End Analytics Platform</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        h1 {
+            color: #0F6CBD;
+        }
+
+        h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8f1fb;
+            color: #0F6CBD;
+            padding: 6px 12px;
+            margin: 4px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .back {
+            text-decoration: none;
+            color: #0F6CBD;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="../index.html" class="back">← Back to Portfolio</a>
+
+<div class="hero">
+
+<h1>End-to-End Analytics Platform</h1>
+
+<p>
+End-to-end Microsoft Fabric analytics solution built using
+a Medallion Architecture, Spark notebooks, Semantic Models
+and Power BI.
+</p>
+
+<div>
+
+<span class="tag">Microsoft Fabric</span>
+<span class="tag">Lakehouse</span>
+<span class="tag">PySpark</span>
+<span class="tag">Data Pipelines</span>
+<span class="tag">Dataflow Gen2</span>
+<span class="tag">Semantic Model</span>
+<span class="tag">Power BI</span>
+
+</div>
+
+</div>
+
+<h2>Overview</h2>
+
+<p>
+This project was built to demonstrate a complete analytics
+solution using Microsoft Fabric and publicly available
+Canadian demographic and economic datasets.
+</p>
+
+<p>
+The solution combines data ingestion, transformation,
+dimensional modelling, semantic modelling and reporting
+within a single Fabric environment.
+</p>
+
+<h2>Architecture</h2>
+
+<pre>
+CSV Files
+    ↓
+Fabric Pipeline
+    ↓
+Bronze Lakehouse
+    ↓
+Spark Transformations
+    ↓
+Silver Layer
+    ↓
+Dataflow Gen2 + Enrichment
+    ↓
+Gold Layer
+    ↓
+Semantic Model
+    ↓
+Power BI
+</pre>
+
+<h2>Key Features</h2>
+
+<ul>
+    <li>Bronze, Silver and Gold Medallion Architecture</li>
+    <li>Automated data ingestion using Fabric Pipelines</li>
+    <li>PySpark transformation and cleansing</li>
+    <li>Wikipedia enrichment of province metadata</li>
+    <li>Dimensional modelling and semantic layer</li>
+    <li>Interactive Power BI reporting</li>
+</ul>
+
+<h2>Outcome</h2>
+
+<p>
+The final solution provides a single analytical view of
+Canadian demographic and economic data while demonstrating
+end-to-end analytics engineering practices within
+Microsoft Fabric.
+</p>
+
+<h2>Screenshots</h2>
+
+<div class="gallery">
+
+<img src="../assets/images/analytics/dashboard1.png">
+
+<img src="../assets/images/analytics/pipeline.png">
+
+<img src="../assets/images/analytics/lakehouse.png">
+
+</div>
+
+</body>
+</html>
